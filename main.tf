@@ -55,7 +55,7 @@ resource "google_sql_user" "updated_user" {
 resource "google_firestore_database" "database" {
   count       = var.database_choosed.firestore ? 1 : 0
   project     = "sandbox-bsolano"
-  name        = "(default)"
+  name        = "best-tuteur-augustin-2024"
   location_id = "eur3"
   type        = "FIRESTORE_NATIVE"
 }

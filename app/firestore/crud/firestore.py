@@ -8,7 +8,7 @@ class Firestore(metaclass=Singleton):
     def __init__(self) -> None:
         # Searches first from .env, or infer if not specified
         if settings.GCLOUD_PROJECT_ID:
-            self.client = firestore.Client(project=settings.GCLOUD_PROJECT_ID)
+            self.client = firestore.Client(project=settings.GCLOUD_PROJECT_ID, database='best-tuteur-augustin-2024')
         else:
             self.client = firestore.Client()
 
