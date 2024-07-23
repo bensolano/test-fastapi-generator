@@ -41,7 +41,7 @@ images:
   - europe-docker.pkg.dev/$PROJECT_ID/$_REPO/$_SERVICE
 
 substitutions:
-  _REPO: cookiecutter-template
+  _REPO: "fastapi-template-repository"
   _SERVICE: "fastapi-template"
   _REGION: "europe-west1"
 
